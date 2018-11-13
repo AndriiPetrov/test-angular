@@ -5,17 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { HttpService } from './http.service';
+import { FactorialPipe } from './factorial.pipe';
+import { JoinPipe } from './join.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FactorialPipe,
+    JoinPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

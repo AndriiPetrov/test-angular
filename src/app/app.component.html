@@ -1,6 +1,48 @@
-<div>
-  <p>UserName: {{user?.name}}</p>
-  <p>UserAge: {{user?.age}}</p>
-</div>
+<!-- <div>{{errors}}</div>
+<ul>
+  <li *ngFor="let user of users">
+    <p>Id: {{user?.id}}</p>
+    <p>FirstName: {{user?.firstName}}</p>
+    <p>lastName: {{user?.lastName}}</p>
+    <p>Avatar: {{user?.avatar}}</p>
+  </li>
+</ul> -->
+
+<!-- <div>Without formating: {{myDate}}</div>
+<div>With formating: {{myDate | date}}</div> -->
+
+<!-- <div>{{ welcome | uppercase }}</div>
+<div>{{ welcome | lowercase }}</div>
+<div>{{ percentage | percent }}</div>
+<div>{{ percentage | currency }}</div>
+
+<div>{{ welcome | slice : 3 }}</div>
+<div>{{ welcome | slice : 6 : 11 }}</div>
+<div>{{ myDate | date: "dd/MM/yyyy" }}</div>
+
+<div>{{pi | number:'2.1-2'}}</div>
+<div>{{pi | number:'3.5-5'}}</div> -->
+
+<!-- <div>{{money | currency: 'UA': 'code'}}</div>
+<div>{{money | currency: 'UA': 'symbol-narrow'}}</div> -->
+<!-- <div>{{money | currency:'RUB':'symbol-narrow':'1.1-1':'ru-RU' }}</div> -->
+<!-- <div>{{money | currency: 'UA': 'only today with the price'}}</div> -->
+
+<!-- <div>{{message | slice : 6 : 11 | uppercase }}</div> -->
+
+<!-- <div>Factorial number {{x}} equal {{x | factorial }}</div> -->
+
+<!-- <div>{{phones | join}}</div>
+<div>{{phones | join : 1}}</div>
+<div>{{phones | join : 1 : 3}}</div> -->
+<!-- <input [(ngModel)]="fact" name="fact">
+<div>Factorial {{fact}} equal {{fact | factorial}}</div> -->
+
+<!-- <input #phone name="phone" class="class-form">
+<button class='btn' (click)="phones.push(phone.value)">Add</button>
+<p>{{ phones | join }}</p> -->
+
+<p>Model: {{ phone | async }}</p>
+<button (click)="showPhones()">Looks models</button>
 
 <router-outlet></router-outlet>
